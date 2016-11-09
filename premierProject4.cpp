@@ -23,14 +23,11 @@ public://behaviors
 	{
 		//for linear or identity activation functions
 		return s;
-		//for ReLU
-		//return max(s, 0.0);
 	}
 	double getActGrad(double &x)
 	{
 		//linear
 		return 1.0;
-		//ReLU if(x<0.0) return 0.0
 	}
 	void propBackward(double& target)
 	{
@@ -42,8 +39,6 @@ public://behaviors
 	}
 	double feedForward(double &x){
 		//output y = f(\sigma) = f(w_*input + b_)
-		//for mutliple inputs;
-		//\sigma = w0_ * x0 + w1_ * x1 + ... + b
 		input_ = x;
 		double sigma = w * input_ + b;
 		output_ = getAct(sigma);
