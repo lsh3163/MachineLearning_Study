@@ -2,7 +2,6 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
-#include<conio.h>
 #pragma warning(disable:4996)
 using namespace std;
 class Neuron{
@@ -85,5 +84,4 @@ int main(){
 		my_neuron.print((double)i);
 	}
 
-	_getch();
 }
