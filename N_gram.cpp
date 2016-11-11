@@ -13,7 +13,7 @@ int main(){
 	int n = 5;
 	char lastch[N] = { ' ' };
 	char chr;
-	while ((chr!=getchar())!=EOF){
+	while ((chr = getchar())!=EOF){
 		if (chr != '\n'){
 			setlastch(n, chr, lastch);
 			printngram(n, lastch);
